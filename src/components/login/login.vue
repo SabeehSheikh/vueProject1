@@ -4,11 +4,11 @@
     <form v-if="isValidform">
     <h1>Login Page</h1>
     <label >Email</label>
-    <input type="text" v-model="form.email">
+    <input type="email" required v-model="form.email">
     <label >Password</label>
-    <input type="text" v-model="form.password">
+    <input type="password" v-model="form.password">
    
-    <button @click="printData()">Login</button>
+    <button @click="validateLoginForm()">Login</button>
     <button @click="navigateToSignup()">Signup</button>
    
   </form>
